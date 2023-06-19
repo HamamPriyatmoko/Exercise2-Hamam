@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1 class="row justify-content-center">Form</h1>
+    <div class="container mt-5">
+      <form>
+        <div class="row g-3">
+          <div class="col rounded-2 mt-4">
+            <input type="text" class="form-control" placeholder="First name" aria-label="First name" />
+          </div>
+          <div class="col rounded-2 mt-4">
+            <input type="text" class="form-control" placeholder="Last name" aria-label="Last name" />
+          </div>
+        </div>
+        <br />
+        <label for="Tanggal" name="Tanggal">Tanggal Lahir:</label><br />
+        <input class="col-3 p-2 rounded-2 mt-2" type="date" name="fdate" id="fname" />
+      </form>
+      <br />
+      <p>Pilih Kursi:</p>
+      <form>
+        <input type="radio" id="html" name="fav_language" value="HTML" />
+        <label for="C#">Universe (1M)</label><br />
+        <input type="radio" id="css" name="fav_language" value="CSS" />
+        <label for="css">CAT 1 (8,9 jt)</label><br />
+        <input type="radio" id="javascript" name="fav_language" value="JavaScript" />
+        <label for="javascript">CAT 2 (6,5 jt)</label><br />
+
+        <div id="alasan">
+          <label for="address">Alamat:</label><br />
+          <textarea id="address" name="address"></textarea><br />
+
+          <label for="opinion">Saran Dan Kritik:</label><br />
+          <textarea id="opinion" name="opinion"></textarea>
+        </div>
+
+        <div class="button-container mt-3">
+          <input type="submit" value="Submit" class="submit-button" onclick="showAlert()" />
+          <script>
+            function showAlert() {
+              alert('Berhasil Disimpan');
+            }
+          </script>
+        </div>
+        <a href="index.html">BACK</a>
+      </form>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+  </body>
+</html>
